@@ -17,7 +17,7 @@ median(temperatura)
 
 quantile(temperatura)
 
-table(temperatura) # encontrar a moda (maior ocorrência)
+table(temperatura) # encontrar a moda (maior ocorr?ncia)
 
 prod(temperatura)^(1/length(temperatura))
 
@@ -37,11 +37,11 @@ gols <- data.frame(gols_coritiba,
 									 gols_timao)
 summary(gols)
 
-# desvio absoluto (com média e com mediana)
+# desvio absoluto (com m?dia e com mediana)
 mad(temperatura, center = mean(temperatura), constant = 1)
 mad(temperatura, constant = 1)
 
-# variancia e std com viés
+# variancia e std com vi?s
 n = length(temperatura)
 var(temperatura)*(n-1)/n
 sd(temperatura)*sqrt((n-1)/n)
@@ -63,6 +63,9 @@ scale(gols_coritiba)
 scale(gols_athletico)
 scale(gols_timao)
 scale(gols)
+help(scale)
+
+
 sd(scale(gols_coritiba))
 sd(scale(gols_athletico))
 sd(scale(gols_timao))
